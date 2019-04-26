@@ -1,0 +1,2 @@
+# sample-endpoint
+Sample endpoint
