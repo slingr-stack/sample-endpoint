@@ -5,6 +5,8 @@
     "internal": true,
     "configurationType": "GLOBAL",
     "deployment": {
+        "type": "java11",
+        "allowMultipleInstances": true,
         "profiles":[
             {
                 "name": "default",
@@ -18,8 +20,7 @@
                 "memory": 384,
                 "description": "Alternative configuration"
             }
-        ],
-        "allowMultipleInstances": true
+        ]
     },
     "icon48": "https://storage.googleapis.com/static.slingrs.io/platform/endpoints/sample.png",
     "configurationHelpUrl": "https://slingr-stack.github.io/platform/app_development_model_endpoints.html",
