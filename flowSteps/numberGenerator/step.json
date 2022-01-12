@@ -1,0 +1,24 @@
+{
+  "label": "Number generator",
+  "name": "numberGenerator",
+  "category": "integrations",
+  "description": "Generates a new random number.",
+  "inputs": [
+    {
+      "label": "Bound",
+      "name": "bound",
+      "type": "number",
+      "description": "This is used to get a random number between 0 (inclusive) and the number passed in this argument, exclusive",
+      "required": "true",
+      "defaultValue": 1000
+    }
+  ],
+  "outputs": [
+    {
+      "label": "Generated number",
+      "name":  "generatedNumber",
+      "type": "number",
+      "description": "The generated random number"
+    }
+  ]
+}

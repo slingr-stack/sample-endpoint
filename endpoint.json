@@ -157,6 +157,9 @@
         "other.js"
     ],
     "listeners":[],
+    "flowSteps":  [
+        "numberGenerator"
+    ],
     "configuration":[
         {
             "name": "token",
