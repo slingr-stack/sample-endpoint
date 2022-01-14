@@ -7,7 +7,7 @@
     {
       "label": "Bound",
       "name": "bound",
-      "type": "number",
+      "type": "integer",
       "description": "This is used to get a random number between 0 (inclusive) and the number passed in this argument, exclusive",
       "required": "true",
       "defaultValue": 1000
