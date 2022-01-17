@@ -1,5 +1,5 @@
 {
-  "label": "Number generator",
+  "label": "Random numb",
   "name": "numberGenerator",
   "category": "integrations",
   "description": "Generates a new random number.",
