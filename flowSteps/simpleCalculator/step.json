@@ -1,0 +1,51 @@
+{
+  "label": "Simple Calculator",
+  "name": "simpleCalculator",
+  "category": "integrations",
+  "description": "Perform simple operations given 2 operands",
+  "inputs": [
+    {
+      "label": "City",
+      "name": "city",
+      "type": "string",
+      "description": "City name, if blank it will use a default city (NY)",
+      "required": "true",
+      "defaultValue": "New York"
+    },
+    {
+      "label": "Operation",
+      "name": "operation",
+      "type": "choice",
+      "defaultValue": "SUM",
+      "required": "true",
+      "options": {
+        "possibleValues": [
+          {
+            "label": "Sum",
+            "name": "SUM"
+          },
+          {
+            "label": "Rest",
+            "name": "REST"
+          },
+          {
+            "label": "Division",
+            "name": "DIV"
+          },
+          {
+            "label": "Multiplication",
+            "name": "MULT"
+          }
+        ]
+      }
+
+      ],
+  "outputs": [
+    {
+      "label": "Result",
+      "name":  "result",
+      "type": "number",
+      "description": "Result of the operation"
+    }
+  ]
+}

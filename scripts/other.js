@@ -6,7 +6,22 @@
 var s = function(a, b){
     return a+b;
 };
+
+var r = function(a, b){
+    return a-b;
+};
+
+var m = function(a, b){
+    return a*b;
+};
+
+var d = function(a, b){
+    return a/b;
+};
 endpoint.sum = s;
+endpoint.rest = r;
+endpoint.div = d;
+endpoint.mult = m;
 
 endpoint.rnd = function(){
     return Math.random();
