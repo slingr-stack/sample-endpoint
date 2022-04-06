@@ -11,26 +11,7 @@
       "description": "City name, if blank it will use a default city (NY)",
       "required": "true",
       "defaultValue": "New York"
-    },
-    {
-      "label": "Value Type",
-      "name": "valueType",
-      "type": "choice",
-      "defaultValue": "FIXED",
-      "required": "true",
-      "options": {
-        "possibleValues": [
-          {
-            "label": "Fixed",
-            "name": "FIXED"
-          },
-          {
-            "label": "Script",
-            "name": "SCRIPT"
-          }
-        ]
-      }
-
+    }
       ],
   "outputs": [
     {
