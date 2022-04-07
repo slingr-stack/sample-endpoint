@@ -22,8 +22,8 @@ public class WeatherService extends RestClient {
 
     public WeatherService() throws EndpointException {
         super(API_URI);
-        setupDefaultParam("units", "imperial");
-        setupDefaultParam("APPID", "4ba72d9a12493a1835f8641d55f7ff29");
+        setupDefaultParam("units", "metric");
+        setupDefaultParam("APPID", "3d8a556f9df436cc4eca00d7c19b1321");
     }
 
     public Json getCurrentWeather(String city){

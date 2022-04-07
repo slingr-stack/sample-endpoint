@@ -9,8 +9,7 @@
       "name": "city",
       "type": "text",
       "description": "City name, if blank it will use a default city (NY)",
-      "required": "true",
-      "defaultValue": ""
+      "required": "true"
     }
       ],
   "outputs": [

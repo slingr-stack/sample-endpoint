@@ -36,16 +36,14 @@
       "name": "firstOperand",
       "type": "text",
       "description": "First operand",
-      "required": "true",
-      "defaultValue": ""
+      "required": "true"
     },
     {
       "label": "Second operand",
       "name": "secondOperand",
       "type": "text",
       "description": "Second operand",
-      "required": "true",
-      "defaultValue": ""
+      "required": "true"
     }
   ],
   "outputs": [
