@@ -7,10 +7,10 @@
     {
       "label": "City",
       "name": "city",
-      "type": "string",
+      "type": "text",
       "description": "City name, if blank it will use a default city (NY)",
       "required": "true",
-      "defaultValue": "New York"
+      "defaultValue": ""
     }
       ],
   "outputs": [

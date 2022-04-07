@@ -5,14 +5,6 @@
   "description": "Perform simple operations given 2 operands",
   "inputs": [
     {
-      "label": "City",
-      "name": "city",
-      "type": "string",
-      "description": "City name, if blank it will use a default city (NY)",
-      "required": "true",
-      "defaultValue": "New York"
-    },
-    {
       "label": "Operation",
       "name": "operation",
       "type": "choice",
@@ -38,8 +30,24 @@
           }
         ]
       }
-
-      ],
+    },
+    {
+      "label": "First operand",
+      "name": "firstOperand",
+      "type": "text",
+      "description": "First operand",
+      "required": "true",
+      "defaultValue": ""
+    },
+    {
+      "label": "Second operand",
+      "name": "secondOperand",
+      "type": "text",
+      "description": "Second operand",
+      "required": "true",
+      "defaultValue": ""
+    }
+  ],
   "outputs": [
     {
       "label": "Result",

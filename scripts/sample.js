@@ -1,4 +1,5 @@
 /**
+    private static Pattern inQuotesPattern = Pattern.compile("(\".*\")");
  * Functions that will be included as part of the endpoints JS interface
  *
  * Created by lefunes on 07/07/16.
