@@ -4,19 +4,31 @@
  * Created by lefunes on 07/07/16.
  */
 var s = function(a, b){
-    return a+b;
+    if (isNaN(a) || isNaN(b)) {
+        return "Not valid operands";
+    }
+    return Number.parseInt(a) + Number.parseInt(b);
 };
 
 var r = function(a, b){
-    return a-b;
+    if (isNaN(a) || isNaN(b)) {
+        return "Not valid operands";
+    }
+    return Number.parseInt(a) - Number.parseInt(b);
 };
 
 var m = function(a, b){
+    if (isNaN(a) || isNaN(b)) {
+        return "Not valid operands";
+    }
     return a*b;
 };
 
 var d = function(a, b){
-    return a/b;
+    if (isNaN(a) || isNaN(b) || b == 0) {
+        return "Not valid operands";
+    }
+    return Number.parseInt(a) / Number.parseInt(b);
 };
 endpoint.sum = s;
 endpoint.rest = r;
