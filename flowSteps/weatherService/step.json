@@ -14,6 +14,8 @@
       ],
   "outputs": [
     {
+      "data":
+    {
       "label": "Temperature",
       "name":  "temperature",
       "type": "decimal",
@@ -30,6 +32,9 @@
       "name":  "humidity",
       "type": "decimal",
       "description": "Humidity"
-    }
+    },
+
+    },
+
   ]
 }

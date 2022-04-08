@@ -8,7 +8,6 @@
 step.simpleCalculator = function (operator, firstOperand, secondOperand) {
 
     let result = 0;
-
     switch (operator) {
         case 'SUM':
             result = endpoint.sum(firstOperand, secondOperand);
