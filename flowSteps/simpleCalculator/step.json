@@ -28,8 +28,10 @@
             "label": "Multiplication",
             "name": "MULT"
           }
-        ]
+        ],
+        "allowContextSelector": "false"
       }
+
     },
     {
       "label": "First operand",

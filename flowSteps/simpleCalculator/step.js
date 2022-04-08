@@ -2,26 +2,20 @@
  * Returns the result of simple math operations given two operands
  *
  * @param {string} operation, Sum, Rest, Multiply or Divide two numbers
- * @param {number} firstOperand, First operand
- * @param {number} secondOperand, Second operand
+ * @param {string} firstOperand, First operand
+ * @param {string} secondOperand, Second operand
  */
 step.simpleCalculator = function (operation, firstOperand, secondOperand) {
-/*
-    let result = 0;
+
     switch (operation) {
         case 'SUM':
-            result = endpoint.sum({firstOperand: firstOperand}, {secondOperand: secondOperand});
-            break;
+            return endpoint.sum(firstOperand, secondOperand);
         case 'REST':
-            result = endpoint.rest({firstOperand: firstOperand}, {secondOperand: secondOperand});
-            break;
+            return endpoint.rest(firstOperand, secondOperand);
         case 'DIV':
-            result = endpoint.div({firstOperand: firstOperand}, {secondOperand: secondOperand});
-            break;
+            return endpoint.div(firstOperand, secondOperand);
         case 'MULT':
-            result = endpoint.mult({firstOperand: firstOperand}, {secondOperand: secondOperand});
-            break;
+            return endpoint.mult(firstOperand, secondOperand);
     }
-*/
-    return endpoint.sum({firstOperand: firstOperand}, {secondOperand: secondOperand});;
+    return false;
 };
