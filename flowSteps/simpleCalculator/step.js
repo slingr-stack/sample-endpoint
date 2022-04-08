@@ -6,7 +6,7 @@
  * @param {number} secondOperand, Second operand
  */
 step.simpleCalculator = function (operator, firstOperand, secondOperand) {
-
+/*
     let result = 0;
     switch (operator) {
         case 'SUM':
@@ -22,5 +22,6 @@ step.simpleCalculator = function (operator, firstOperand, secondOperand) {
             result = endpoint.mult(firstOperand, secondOperand);
             break;
     }
-    return result;
+    */
+    return endpoint.rnd();
 };
