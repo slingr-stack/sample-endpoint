@@ -30,9 +30,6 @@ endpoint.div = d;
 endpoint.mult = m;
 
 endpoint.sum = function(a,b){
-    if (isNaN(a) || isNaN(b)) {
-        return "Not valid operands";
-    }
     return Number.parseInt(a) + Number.parseInt(b);
 };
 

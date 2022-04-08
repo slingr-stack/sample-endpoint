@@ -1,14 +1,14 @@
 /**
  * Returns the result of simple math operations given two operands
  *
- * @param {string} operator, Sum, Rest, Multiply or Divide two numbers
+ * @param {string} operation, Sum, Rest, Multiply or Divide two numbers
  * @param {number} firstOperand, First operand
  * @param {number} secondOperand, Second operand
  */
-step.simpleCalculator = function (operator, firstOperand, secondOperand) {
+step.simpleCalculator = function (operation, firstOperand, secondOperand) {
 /*
     let result = 0;
-    switch (operator) {
+    switch (operation) {
         case 'SUM':
             result = endpoint.sum({firstOperand: firstOperand}, {secondOperand: secondOperand});
             break;
