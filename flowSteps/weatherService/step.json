@@ -14,28 +14,10 @@
       ],
   "outputs": [
     {
-      "label": "City",
-      "name":  "city",
-      "type": "string",
-      "description": "City name"
-    },
-    {
-      "label": "Temperature",
-      "name":  "temperature",
-      "type": "decimal",
-      "description": "Temperature"
-    },
-    {
-      "label": "Pressure",
-      "name":  "pressure",
-      "type": "decimal",
-      "description": "Pressure"
-    },
-    {
-      "label": "Humidity",
-      "name":  "humidity",
-      "type": "decimal",
-      "description": "Humidity"
+      "label": "result",
+      "name":  "result",
+      "type": "object",
+      "description": "Result object containing temperature, pressure and humidity for the given city"
     }
   ]
 }

@@ -4,32 +4,31 @@
  * Created by lefunes on 07/07/16.
  */
 
-var r = function(a, b){
+endpoint.rest = function(a, b){
     if (isNaN(a) || isNaN(b)) {
         return "Not valid operands";
     }
     return Number.parseInt(a) - Number.parseInt(b);
 };
 
-var m = function(a, b){
-    if (isNaN(a) || isNaN(b)) {
-        return "Not valid operands";
-    }
-    return a*b;
-};
-
-var d = function(a, b){
+endpoint.div = function(a, b){
     if (isNaN(a) || isNaN(b) || b == 0) {
         return "Not valid operands";
     }
     return Number.parseInt(a) / Number.parseInt(b);
 };
 
-endpoint.rest = r;
-endpoint.div = d;
-endpoint.mult = m;
+endpoint.mult = function(a, b){
+    if (isNaN(a) || isNaN(b)) {
+        return "Not valid operands";
+    }
+    return Number.parseInt(a) * Number.parseInt(b);
+};
 
 endpoint.sum = function(a,b){
+    if (isNaN(a) || isNaN(b)) {
+        return "Not valid operands";
+    }
     return Number.parseInt(a) + Number.parseInt(b);
 };
 
