@@ -6,10 +6,10 @@
 step.weatherService = function (city) {
     var data =  endpoint.weather({city: city});
 
-    return {
-        "city": data['city'],
-        "temperature": data['temperature'],
-        "pressure": data['pressure'],
-        "humidity": data['humidity']
-    };
+    return [
+            data['city'],
+            data['temperature'],
+            data['pressure'],
+            data['humidity']
+    ];
 };
