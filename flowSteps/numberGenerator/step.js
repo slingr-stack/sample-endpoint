@@ -1,13 +1,12 @@
 /**
  * Generates a random number.
  *
- * @param {object} stepConfig.inputs {number} bound, This is used to get a random number between 0 (inclusive)
+ * @param {object} inputs {number} bound, This is used to get a random number between 0 (inclusive)
  * and the number passed in this argument, exclusive.
- * @param {object} stepConfig.context {object} context
  */
-step.numberGenerator = function (stepConfig) {
+step.numberGenerator = function (inputs) {
 
-    var data = endpoint.randomNumber({bound: stepConfig.inputs.bound});
+    var data = endpoint.randomNumber({bound: inputs.bound});
     return {
         "generatedNumber": data['number']
     };
