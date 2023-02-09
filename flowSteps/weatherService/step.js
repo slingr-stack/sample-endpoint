@@ -5,7 +5,6 @@
  */
 step.weatherService = function (inputs) {
     var data =  endpoint.weather({city: inputs.city});
-
     return [
             data['city'],
             data['temperature'],

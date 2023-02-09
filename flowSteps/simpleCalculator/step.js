@@ -7,7 +7,6 @@
  * {string} secondOperand, Second operand
  */
 step.simpleCalculator = function (inputs) {
-
     switch (inputs.operation) {
         case 'SUM':
             return endpoint.sum(inputs.firstOperand, inputs.secondOperand);
