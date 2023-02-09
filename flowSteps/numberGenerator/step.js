@@ -5,7 +5,6 @@
  * and the number passed in this argument, exclusive.
  */
 step.numberGenerator = function (inputs) {
-
     var data = endpoint.randomNumber({bound: inputs.bound});
     return {
         "generatedNumber": data['number']
