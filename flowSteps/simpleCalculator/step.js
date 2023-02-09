@@ -1,23 +1,22 @@
 /**
  * Returns the result of simple math operations given two operands
  *
- * @param {object} stepConfig.inputs
+ * @param {object} inputs
  * {string} operation, Sum, Rest, Multiply or Divide two numbers
  * {string} firstOperand, First operand
  * {string} secondOperand, Second operand
- * @param {object} stepConfig.context {object} context
  */
-step.simpleCalculator = function (stepConfig) {
+step.simpleCalculator = function (inputs) {
 
-    switch (stepConfig.inputs.operation) {
+    switch (inputs.operation) {
         case 'SUM':
-            return endpoint.sum(stepConfig.inputs.firstOperand, stepConfig.inputs.secondOperand);
+            return endpoint.sum(inputs.firstOperand, inputs.secondOperand);
         case 'REST':
-            return endpoint.rest(stepConfig.inputs.firstOperand, stepConfig.inputs.secondOperand);
+            return endpoint.rest(inputs.firstOperand, inputs.secondOperand);
         case 'DIV':
-            return endpoint.div(stepConfig.inputs.firstOperand, stepConfig.inputs.secondOperand);
+            return endpoint.div(inputs.firstOperand, inputs.secondOperand);
         case 'MULT':
-            return endpoint.mult(stepConfig.inputs.firstOperand, stepConfig.inputs.secondOperand);
+            return endpoint.mult(inputs.firstOperand, inputs.secondOperand);
     }
     return false;
 };

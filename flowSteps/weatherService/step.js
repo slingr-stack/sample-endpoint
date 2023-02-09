@@ -1,11 +1,10 @@
 /**
  * Returns some real time weather characteristics given a city
  *
- * @param {object} stepConfig.inputs {string} city, City name, if nothing found it will use a default city (NY)
- * @param {object} stepConfig.context {object} context
+ * @param {object} inputs {string} city, City name, if nothing found it will use a default city (NY)
  */
-step.weatherService = function (stepConfig) {
-    var data =  endpoint.weather({city: stepConfig.inputs.city});
+step.weatherService = function (inputs) {
+    var data =  endpoint.weather({city: inputs.city});
 
     return [
             data['city'],
