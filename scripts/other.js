@@ -3,10 +3,34 @@
  *
  * Created by lefunes on 07/07/16.
  */
-var s = function(a, b){
-    return a+b;
+
+endpoint.rest = function(a, b){
+    if (isNaN(a) || isNaN(b)) {
+        return "Not valid operands";
+    }
+    return Number.parseInt(a) - Number.parseInt(b);
 };
-endpoint.sum = s;
+
+endpoint.div = function(a, b){
+    if (isNaN(a) || isNaN(b) || b == 0) {
+        return "Not valid operands";
+    }
+    return Number.parseInt(a) / Number.parseInt(b);
+};
+
+endpoint.mult = function(a, b){
+    if (isNaN(a) || isNaN(b)) {
+        return "Not valid operands";
+    }
+    return Number.parseInt(a) * Number.parseInt(b);
+};
+
+endpoint.sum = function(a,b){
+    if (isNaN(a) || isNaN(b)) {
+        return "Not valid operands";
+    }
+    return Number.parseInt(a) + Number.parseInt(b);
+};
 
 endpoint.rnd = function(){
     return Math.random();

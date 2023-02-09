@@ -158,7 +158,9 @@
     ],
     "listeners":[],
     "flowSteps":  [
-        "numberGenerator"
+        "numberGenerator",
+        "weatherService",
+        "simpleCalculator"
     ],
     "configuration":[
         {

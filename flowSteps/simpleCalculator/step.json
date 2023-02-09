@@ -1,0 +1,59 @@
+{
+  "label": "Simple Calculator",
+  "name": "simpleCalculator",
+  "category": "integrations",
+  "description": "Perform simple operations given 2 operands",
+  "inputs": [
+    {
+      "label": "Operation",
+      "name": "operation",
+      "type": "choice",
+      "defaultValue": "SUM",
+      "required": "true",
+      "options": {
+        "possibleValues": [
+          {
+            "label": "Sum",
+            "name": "SUM"
+          },
+          {
+            "label": "Rest",
+            "name": "REST"
+          },
+          {
+            "label": "Division",
+            "name": "DIV"
+          },
+          {
+            "label": "Multiplication",
+            "name": "MULT"
+          }
+        ],
+        "allowContextSelector": "false"
+      }
+
+    },
+    {
+      "label": "First operand",
+      "name": "firstOperand",
+      "type": "text",
+      "description": "First operand",
+      "required": "true"
+    },
+    {
+      "label": "Second operand",
+      "name": "secondOperand",
+      "type": "text",
+      "description": "Second operand",
+      "required": "true"
+    }
+  ],
+  "outputs": [
+    {
+      "label": "Result",
+      "name":  "result",
+      "type": "number",
+      "description": "Result of the operation"
+    }
+  ]
+}

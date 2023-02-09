@@ -1,0 +1,41 @@
+{
+  "label": "Weather service",
+  "name": "weatherService",
+  "category": "integrations",
+  "description": "Returns current weather for a given city",
+  "inputs": [
+    {
+      "label": "City",
+      "name": "city",
+      "type": "text",
+      "description": "City name, if blank it will use a default city (NY)",
+      "required": "true"
+    }
+      ],
+  "outputs": [
+    {
+      "label": "city",
+      "name":  "city",
+      "type": "text",
+      "description": "name for the given city"
+    },
+    {
+      "label": "temperature",
+      "name":  "temperature",
+      "type": "number",
+      "description": "temperature for the given city"
+    },
+    {
+      "label": "pressure",
+      "name":  "pressure",
+      "type": "number",
+      "description": "pressure for the given city"
+    },
+    {
+      "label": "humidity",
+      "name":  "humidity",
+      "type": "number",
+      "description": " humidity for the given city"
+    }
+  ]
+}
